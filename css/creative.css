@@ -10560,6 +10560,128 @@ html {
   height: 100%;
 }
 
+#gmap_canvas {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+@font-face {
+  font-family: 'Always Forever';
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/always_forever.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Always Forever Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url(fonts/always_forever_bold.ttf) format("truetype");
+}
+
+.font-forever {
+  font-family: 'Always Forever';
+}
+
+.font-forever-bold {
+  font-family: 'Always Forever Bold';
+}
+
+.p-6 {
+  padding: 5rem !important;
+}
+
+.p-7 {
+  padding: 5rem !important;
+}
+
+hr.divider-dark {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #343a40;
+}
+
+hr.dark {
+  border-color: #343a40;
+}
+
+.bg-primary {
+  background-color: #fff200 !important;
+}
+
+.bg-secondary {
+  background-color: #f4623a !important;
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.no-padding-tb {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.no-border {
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.carousel-frame {
+  position: absolute;
+  top: 0%;
+  right: 60%;
+  bottom: 40%;
+  left: 20%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  background-color: #f4623a;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.carousel-frame-right {
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  bottom: 40%;
+  right: 20%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  background-color: #f4623a;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.carousel-indicators {
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.carousel-indicators li {
+  height: 30px;
+  background-color: #f4623a;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #fff200;
+}
+
+.page-subsection {
+  padding: 4rem 0;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -10628,13 +10750,13 @@ hr.light {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: #212529;
   }
   #mainNav .navbar-brand:hover {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+    color: #212529;
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -10665,8 +10787,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead.jpg");
+  background: white;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
