@@ -2,6 +2,8 @@
 // expo yellow: ffd500
 // bezanka yellow: fff200
 // red: 7c4c43
+// Bezanka original logo red: f90604
+// creative red : #f4623a !important;
 
 body,
 html {
@@ -75,11 +77,11 @@ hr.dark {
 // }
 
 .bg-primary {
-  background-color: #fff200 !important;
+  background-color: $primary !important;
 }
 
 .bg-secondary {
-  background-color: #f4623a !important;
+  background-color: $secondary !important;
 }
 
 .no-padding {
@@ -109,7 +111,7 @@ hr.dark {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  background-color: #f4623a;
+  background-color: $secondary;
   text-align: center;
   opacity: 0.75;
 }
@@ -124,7 +126,7 @@ hr.dark {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  background-color: #f4623a;
+  background-color: $secondary;
   text-align: center;
   opacity: 0.75;
 }
@@ -143,7 +145,7 @@ hr.dark {
 }
 
 .carousel-indicators .active {
-  background-color: #fff200;
+  background-color: $secondary;
 }
 
 .page-subsection {
