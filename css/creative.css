@@ -10631,6 +10631,14 @@ hr.dark {
   border-bottom: 0px;
 }
 
+.bg-primary-opaq {
+  background-color: #fff200b0;
+}
+
+.bg-secondary-opaq {
+  background-color: #f90604b0;
+}
+
 .carousel-frame {
   position: absolute;
   top: 0%;
@@ -10641,9 +10649,7 @@ hr.dark {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  background-color: #f90604;
   text-align: center;
-  opacity: 0.75;
 }
 
 .carousel-frame-right {
@@ -10656,9 +10662,7 @@ hr.dark {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  background-color: #f90604;
   text-align: center;
-  opacity: 0.75;
 }
 
 .carousel-indicators {
