@@ -101,6 +101,14 @@ hr.dark {
   border-bottom: 0px;
 }
 
+.bg-primary-opaq {
+  background-color: $bezanka-yellow-opaq;
+}
+
+.bg-secondary-opaq {
+  background-color: $bezanka-red-opaq;
+}
+
 .carousel-frame {
   position: absolute;
   top: 0%;
@@ -111,9 +119,7 @@ hr.dark {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  background-color: $secondary;
   text-align: center;
-  opacity: 0.75;
 }
 
 .carousel-frame-right {
@@ -126,9 +132,7 @@ hr.dark {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  background-color: $secondary;
   text-align: center;
-  opacity: 0.75;
 }
 
 .carousel-indicators {
