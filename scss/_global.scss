@@ -114,6 +114,133 @@ hr.dark {
   padding-top: 70px;
 }
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .carousel-frame {
+    font-size: 0.2rem;
+  }
+  .carousel-frame-right {
+    font-size: 0.2rem;
+  }
+  .carousel-frame .font-forever-bold {
+    font-size: 1.3rem;
+  }
+  .carousel-frame-right .font-forever-bold {
+    font-size: 1.3rem;
+  }
+  .font-forever-bold {
+    font-size: 3.5rem;
+  }
+  .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.475rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+  .carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    background-color: $primary;
+    border-radius: 100%;
+    opacity: 1;
+  }
+}
+@media (min-width: 576px) {
+  .carousel-frame {
+    font-size: 0.5rem;
+  }
+  .carousel-frame-right {
+    font-size: 0.5rem;
+  }
+  .carousel-frame .font-forever-bold {
+    font-size: 2.8rem;
+  }
+  .carousel-frame-right .font-forever-bold {
+    font-size: 2.8rem;
+  }
+  .font-forever-bold {
+    font-size: 4.8rem;
+  }
+  .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.675rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-frame {
+    font-size: 0.6rem;
+  }
+  .carousel-frame-right {
+    font-size: 0.6rem;
+  }
+  .carousel-frame .font-forever-bold {
+    font-size: 3.5rem;
+  }
+  .carousel-frame-right .font-forever-bold {
+    font-size: 3.5rem;
+  }
+  .font-forever-bold {
+    font-size: 5.5rem;
+  }
+  .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-frame {
+    font-size: 0.75rem;
+  }
+  .carousel-frame-right {
+    font-size: 0.75rem;
+  }
+  .carousel-frame .font-forever-bold {
+    font-size: 4.0rem;
+  }
+  .carousel-frame-right .font-forever-bold {
+    font-size: 4.0rem;
+  }
+  .font-forever-bold {
+    font-size: 6.5rem;
+  }
+  .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.825rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-frame {
+    font-size: 1.1rem;
+  }
+  .carousel-frame-right {
+    font-size: 1.1rem;
+  }
+  .carousel-frame .font-forever-bold {
+    font-size: 4.5rem;
+  }
+  .carousel-frame-right .font-forever-bold {
+    font-size: 4.5rem;
+  }
+  .font-forever-bold {
+    font-size: 6.8rem;
+  }
+  .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
 .carousel-frame {
   position: absolute;
   top: 0%;
