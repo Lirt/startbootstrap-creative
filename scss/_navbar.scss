@@ -2,7 +2,8 @@
 #mainNav {
   box-shadow: $box-shadow;
   background-color: $white;
-  transition: background-color 0.2s ease;
+  // background-color: transparent;
+  // transition: background-color 0.2s ease;
   .navbar-brand {
     font-family: $font-family-sans-serif;
     font-weight: $font-weight-bold;
@@ -28,8 +29,9 @@
   }
   @include media-breakpoint-up(lg) {
     // Base styling for the navbar - screen sizes greater than the large breakpoint
-    box-shadow: none;
-    background-color: transparent;
+    // box-shadow: none;
+    box-shadow: $box-shadow;
+    // background-color: transparent;
     .navbar-brand {
       color: $gray-900;
       &:hover {
