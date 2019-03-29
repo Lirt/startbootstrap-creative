@@ -51,7 +51,12 @@ html {
 
 .font-forever-bold {
   font-family: 'Always Forever Bold';
-  // font-size: 4rem;
+  // font-size: 6vw;
+}
+
+.object-fit {
+  object-fit: cover;
+  height: 400px;
 }
 
 .p-6 {
