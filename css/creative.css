@@ -10649,26 +10649,18 @@ hr.dark {
   padding-top: 70px;
 }
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
 @media (max-width: 575.98px) {
   .carousel-frame {
-    font-size: 0.2rem;
+    font-size: 0.3rem;
   }
   .carousel-frame-right {
-    font-size: 0.2rem;
+    font-size: 0.3rem;
   }
   .carousel-frame .font-forever-bold {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
   .carousel-frame-right .font-forever-bold {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
   .font-forever-bold {
     font-size: 3.5rem;
@@ -10690,10 +10682,10 @@ hr.dark {
 
 @media (min-width: 576px) {
   .carousel-frame {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
   }
   .carousel-frame-right {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
   }
   .carousel-frame .font-forever-bold {
     font-size: 2.8rem;
@@ -10709,6 +10701,13 @@ hr.dark {
     font-size: 0.675rem;
     line-height: 1.5;
     border-radius: 0.2rem;
+  }
+  .carousel-indicators li {
+    height: 19px;
+    width: 19px;
+    background-color: #fff200;
+    border-radius: 100%;
+    opacity: 1;
   }
 }
 
@@ -10734,6 +10733,13 @@ hr.dark {
     line-height: 1.5;
     border-radius: 0.2rem;
   }
+  .carousel-indicators li {
+    height: 24px;
+    width: 24px;
+    background-color: #fff200;
+    border-radius: 100%;
+    opacity: 1;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10758,6 +10764,13 @@ hr.dark {
     line-height: 1.5;
     border-radius: 0.2rem;
   }
+  .carousel-indicators li {
+    height: 27px;
+    width: 27px;
+    background-color: #fff200;
+    border-radius: 100%;
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -10781,6 +10794,13 @@ hr.dark {
     font-size: 1.2rem;
     line-height: 1.5;
     border-radius: 0.2rem;
+  }
+  .carousel-indicators li {
+    height: 30px;
+    width: 30px;
+    background-color: #fff200;
+    border-radius: 100%;
+    opacity: 1;
   }
 }
 
