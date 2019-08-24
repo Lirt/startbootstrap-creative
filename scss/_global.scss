@@ -81,8 +81,46 @@ hr.dark {
   background-color: $primary !important;
 }
 
+.bg-primary-opac {
+  background-color: $primary-opac !important;
+}
+
+.bg-primary-light {
+  background-color: $primary-light !important;
+}
+
+.bg-primary-light-opac {
+  background-color: $primary-light-opac !important;
+}
+
 .bg-secondary {
   background-color: $secondary !important;
+}
+
+.bg-secondary-opac {
+  background-color: $secondary-opac !important;
+}
+
+.bg-secondary-light {
+  background-color: $secondary-light !important;
+}
+
+.bg-secondary-light-opac {
+  background-color: $secondary-light-opac !important;
+}
+
+.bg-history {
+  background-image: url("img/miska-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-repertoire {
+  background-image: url("img/repertoire-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .no-padding {
@@ -314,6 +352,18 @@ hr.dark {
 // Typography
 .text-white-75 {
   color: fade-out($white, .25);
+}
+
+.text-white-90 {
+  color: fade-out($white, .10);
+}
+
+.text-white-100 {
+  color: $white;
+}
+
+.text-black-75 {
+  color: rgba(0, 0, 0, 0.75) !important;
 }
 
 // Custom horizontal rules
