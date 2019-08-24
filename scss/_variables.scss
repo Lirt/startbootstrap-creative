@@ -7,15 +7,26 @@ $orange: #f4623a !default;
 $brown: #5c4d42 !default;
 // $bezanka-red: #f90604 !default;
 $bezanka-red: #f4623a !default;
+$bezanka-red-opac: #f4623aea !default;
+$bezanka-red-opaq: #f4623ab0 !default;
+$bezanka-light-red: #fa8c6e !default;
+$bezanka-light-red-opac: #fa8c6e9a !default;
 $bezanka-yellow: #fff200 !default;
 $bezanka-yellow-opaq: #fff200b0 !default;
+$bezanka-light-yellow: #fffa9f !default;
+$bezanka-light-yellow-opaq: #fffa9fb0 !default;
 // $bezanka-red-opaq: #f90604b0 !default;
-$bezanka-red-opaq: #f4623ab0 !default;
 
 // Set primary color to orange
 // $primary: $orange !default;
 $primary: $bezanka-yellow !default;
+$primary-opac: $bezanka-yellow-opaq !default;
+$primary-light: $bezanka-light-yellow !default;
+$primary-light-opac: $bezanka-light-yellow-opaq !default;
 $secondary: $bezanka-red !default;
+$secondary-opac: $bezanka-red-opac !default;
+$secondary-light: $bezanka-light-red !default;
+$secondary-light-opac: $bezanka-light-red-opac !default;
 
 // Font overrides
 $font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
