@@ -68,16 +68,6 @@ html {
   padding: 5rem !important;
 }
 
-hr.divider-dark {
-  max-width: 3.25rem;
-  border-width: 0.2rem;
-  border-color: #343a40;
-}
-
-hr.dark {
-  border-color: #343a40;
-}
-
 .bg-primary {
   background-color: $primary !important;
 }
@@ -376,6 +366,10 @@ hr.divider {
 
 hr.light {
   border-color: $white;
+}
+
+hr.dark {
+  border-color: #343a40;
 }
 
 // Button restyling
