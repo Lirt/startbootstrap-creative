@@ -98,7 +98,7 @@
   <path class="b" d="M255.69,465.27l.36.18-.33-.21Z"/>
   <path class="b" d="M266.71,494.27l.19-.35-.22.33Z"/>
   <path class="c" d="M827.34,266.15l-.68.59a4.54,4.54,0,0,1-.45-.7c0-.06.24-.35.29-.33A5.91,5.91,0,0,1,827.34,266.15Z"/>
-  <a xmlns="http://www.w3.org/2000/svg" id="svg-logo-anchor" xlink:href="/#header-carousel" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top">
+  <a xmlns="http://www.w3.org/2000/svg" id="svg-logo-anchor" xlink:href="/#main-container" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top">
     <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
   </a>
 </svg>
