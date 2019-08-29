@@ -12075,6 +12075,7 @@ html {
   width: 100%;
   height: 100%;
   scroll-behavior: smooth;
+  font-family: 'Merriweather', serif;
 }
 
 #gmap_canvas {
@@ -12095,6 +12096,10 @@ html {
   font-style: normal;
   font-weight: bold;
   src: url(fonts/always_forever_bold.ttf) format("truetype");
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
 }
 
 .font-forever {
@@ -12211,9 +12216,6 @@ html {
   .carousel-frame-right .font-forever-bold {
     font-size: 1.7rem;
   }
-  .font-forever-bold {
-    font-size: 3.5rem;
-  }
   .btn {
     padding: 0.25rem 0.5rem;
     font-size: 0.475rem;
@@ -12241,9 +12243,6 @@ html {
   }
   .carousel-frame-right .font-forever-bold {
     font-size: 2.8rem;
-  }
-  .font-forever-bold {
-    font-size: 4.8rem;
   }
   .btn {
     padding: 0.25rem 0.5rem;
@@ -12273,9 +12272,6 @@ html {
   .carousel-frame-right .font-forever-bold {
     font-size: 3.5rem;
   }
-  .font-forever-bold {
-    font-size: 5.5rem;
-  }
   .btn {
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
@@ -12295,17 +12291,26 @@ html {
   .carousel-frame {
     font-size: 0.75rem;
   }
+  .carousel-frame-lg {
+    font-size: 0.80rem;
+  }
   .carousel-frame-right {
     font-size: 0.75rem;
+  }
+  .carousel-frame-right-lg {
+    font-size: 0.80rem;
   }
   .carousel-frame .font-forever-bold {
     font-size: 4.0rem;
   }
-  .carousel-frame-right .font-forever-bold {
-    font-size: 4.0rem;
+  .carousel-frame-lg .font-forever-bold {
+    font-size: 5.0rem;
   }
-  .font-forever-bold {
-    font-size: 6.5rem;
+  .carousel-frame-right .font-forever-bold {
+    font-size: 5.0rem;
+  }
+  .carousel-frame-right-lg .font-forever-bold {
+    font-size: 5.0rem;
   }
   .btn {
     padding: 0.25rem 0.5rem;
@@ -12326,17 +12331,26 @@ html {
   .carousel-frame {
     font-size: 1.1rem;
   }
+  .carousel-frame-lg {
+    font-size: 1.1rem;
+  }
   .carousel-frame-right {
     font-size: 1.1rem;
   }
+  .carousel-frame-right-lg {
+    font-size: 1.1rem;
+  }
   .carousel-frame .font-forever-bold {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
+  }
+  .carousel-frame-lg .font-forever-bold {
+    font-size: 5.5rem;
   }
   .carousel-frame-right .font-forever-bold {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
   }
-  .font-forever-bold {
-    font-size: 6.8rem;
+  .carousel-frame-right-lg .font-forever-bold {
+    font-size: 5.5rem;
   }
   .btn {
     padding: 0.25rem 0.5rem;
@@ -12351,6 +12365,10 @@ html {
     border-radius: 100%;
     opacity: 1;
   }
+}
+
+.font-large {
+  font-size: 8rem;
 }
 
 .carousel-frame {
@@ -12384,7 +12402,7 @@ html {
   top: 0%;
   left: 55%;
   right: 15%;
-  bottom: 35%;
+  bottom: 25%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -12451,6 +12469,11 @@ hr.dark {
 
 .page-section {
   padding: 8rem 0;
+}
+
+.tooltip-inner {
+  max-width: 350px;
+  /* If max-width does not work, try using width instead */
 }
 
 #mainNav {
