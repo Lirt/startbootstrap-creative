@@ -12156,7 +12156,7 @@ html {
 }
 
 .bg-history {
-  background-image: url("img/cover-logo-bw.jpg");
+  background-image: url("img/cover-logo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12359,6 +12359,19 @@ html {
   right: 55%;
   left: 15%;
   bottom: 45%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-frame-lg {
+  position: absolute;
+  top: 0%;
+  right: 55%;
+  left: 15%;
+  bottom: 25%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
