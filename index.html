@@ -29,45 +29,47 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <div class="container-fluid no-padding-tb p-navbar">
+  <div id="main-container" class="container-fluid no-padding-tb p-navbar">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top no-padding-tb" id="mainNav">
       <div class="container col-md-10 col-sm-10">
-        <object class="navbar-brand js-scroll-trigger no-padding-tb" data="img/bezanka-logo.svg" type="image/svg+xml"
+        <object class="js-scroll-trigger no-padding-tb" data="img/bezanka-logo.svg" type="image/svg+xml"
                 height="70px" width="90px">
         </object>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Navigation Bar Items-->
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#2-percenta">2%</a>
+              <a class="nav-link js-scroll-trigger" href="#zlozky">Zložky</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#o-nas">O nás</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#co-robime">Čo robíme</a>
+              <a class="nav-link js-scroll-trigger" href="#repertoar">Repertoár</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#repertoar">Repertoár</a>
+              <a class="nav-link js-scroll-trigger" href="#percenta">2%</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#instagram">Galéria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#napiste-nam">Napíšte nám</a>
+              <a class="nav-link js-scroll-trigger" href="#map">Mapa</a>
             </li>
-            <li class="nav-item border-right">
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger border-right" href="#napiste-nam">Napíšte nám</a>
+            </li>
+            <li class="nav-item border-right">
               <a class="nav-link js-scroll-trigger" href="/history.html">História</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/repertoire.html">Repertoár</a>
-            </li>
+            <!-- Navigation Bar Social Medias-->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" target="_blank" href="https://facebook.com/FolklornySuborBezanka">
                 <i class="fab fa-facebook fa-1x text-muted"></i>
@@ -78,6 +80,11 @@
                 <i class="fab fa-instagram fa-1x text-muted"></i>
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" target="_blank" href="https://www.youtube.com/channel/UCY8L27gC0xQgAjCQIVQb5-A">
+                <i class="fab fa-youtube fa-1x text-muted"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -86,63 +93,425 @@
 
   <!-- Carousel -->
   <div class="container-fluid no-padding">
-    <div id="header-carousel" class="carousel slide" data-interval="5000" data-ride="carousel" pause="false">
+    <div id="header-carousel" class="carousel slide" data-interval="6000" data-ride="carousel" pause="false">
       <!-- Carousel Indicators-->
-      <ol class="carousel-indicators mb-5">
-        <li class="active carousel-indicator" data-target="#header-carousel" data-slide-to="0"></li>
+      <ol class="carousel-indicators carousel-indicators-li carousel-indicators-left mb-5" style="width: 100px">
+        <li class="carousel-indicator active" data-target="#header-carousel" data-slide-to="0"></li>
         <li class="carousel-indicator" data-target="#header-carousel" data-slide-to="1"></li>
         <li class="carousel-indicator" data-target="#header-carousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
+        <!-- Carousel Item 1 - Miska Logo -->
         <div class="carousel-item active">
-          <img class="d-block w-100" src="img/cover-logo.jpg" alt="">
-          <!-- Carousel Recruitment-->
-          <div class="carousel-caption d-none d-md-block">
-            <a class="btn btn-secondary text-white btn-xl" href="static/plagat-nabor.pdf" target="_blank" >Pridaj sa k nám</a>
+          <img class="d-block w-100" src="img/miska-logo-crop.jpg" alt="">
+          <!-- Recruitment Button -->
+          <div class="carousel-caption d-md-block">
+            <a class="btn btn-primary text-black-75 btn-xl" href="static/plagat-a3-promo.pdf" target="_blank" >Pridaj sa k nám</a>
           </div>
-          <!-- Carousel Frame 1-->
-          <div class="carousel-frame bg-secondary-opaq row justify-content-center">
-            <h1 class="col-lg-12 display-3 font-forever-bold text-white">KONKURZ</h1>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">Konkurz do tanečnej, hudobnej a speváckej zložky</p>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">Čas: 25.9 a 2.10 od 19:00 do 22:00h</p>
-            <a href="#kontakt" class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0"><p>Miesto: Tanečná sála Iuventa</p></a>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">Kontakt: 0903429527</p>
+          <!-- Frame 1-->
+          <div class="carousel-frame bg-primary-opaq row justify-content-center">
+            <h1 class="col-lg-12 display-1 font-forever-bold text-black-75">Konkurz</h1>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">Konkurz do tanečnej, hudobnej a speváckej zložky (vek od 15 rokov)</p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">Čas: <b>25.9.</b> a <b>2.10.</b> od 19:00 do 22:00h</p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0"><a href="#kontakt" class="text-reset">Miesto: Tanečná sála Iuventa</a></p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">Kontakt: 0903 429 527</p>
           </div>
         </div>
+        <!-- Carousel Item 2 - Girl -->
         <div class="carousel-item">
-          <!-- Carousel Recruitment-->
+          <!-- Recruitment Button -->
           <div class="carousel-caption d-none d-md-block">
-            <a class="btn btn-secondary text-white btn-xl" href="static/plagat-nabor.pdf" target="_blank" >Pridaj sa k nám</a>
+            <a class="btn btn-secondary text-white btn-xl" href="static/plagat-a3-promo.pdf" target="_blank" >Pridaj sa k nám</a>
           </div>
           <img class="d-block w-100" src="img/cover-girls.jpg" alt="">
-          <!-- Carousel Frame 2 -->
-          <div class="carousel-frame bg-primary-opaq row justify-content-center">
-            <h1 class="col-lg-12 display-3 font-forever-bold text-black-75">Folklórny súbor Bezanka</h1>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">B - božský</p>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">E - energický</p>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">Z - zábavný</p>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">A - amatérsky</p>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">N - nenahraditeľný</p>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">K - kamarátsky</p>
-            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-black-75 my-0">A – autentický</p>
+          <!-- Frame 2 -->
+          <div class="carousel-frame bg-secondary-opaq row justify-content-center">
+            <h1 class="col-lg-12 display-3 font-forever-bold text-white">Folklórny súbor Bezanka</h1>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">B - božský</p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">E - energický</p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">Z - zábavný</p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">A - amatérsky</p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">N - nenahraditeľný</p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">K - kamarátsky</p>
+            <p class="col-lg-10 col-md-8 col-sm-8 col-10 text-left text-white my-0">A – autentický</p>
           </div>
         </div>
+        <!-- Carousel Item 3 - Leg -->
         <div class="carousel-item">
-          <!-- Carousel Recruitment-->
+          <!-- Recruitment -->
           <div class="carousel-caption d-none d-md-block">
-            <a class="btn btn-secondary text-white btn-xl" href="static/plagat-nabor.pdf" target="_blank" >Pridaj sa k nám</a>
+            <a class="btn btn-primary text-black-75 btn-xl" href="static/plagat-a3-promo.pdf" target="_blank" >Pridaj sa k nám</a>
           </div>
           <img class="d-block w-100" src="img/cover-leg.jpg" alt="">
-          <!-- Carousel Frame 3-->
-          <div class="carousel-frame bg-secondary-opaq row justify-content-center">
-          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Support Section -->
-  <section class="page-section bg-secondary p-6" id="2-percenta">
+  <!-- Zlozky Section -->
+  <section class="page-section pt-6 pb-6" id="zlozky">
+    <div class="container">
+      <h1 class="text-center display-1 mt-0 font-forever-bold">Zložky</h1>
+      <hr class="divider my-1 dark">
+      <div class="row">
+        <!-- Ikonka Tanec -->
+        <div class="col-lg-4 col-md-4 text-center">
+          <div class="mt-5">
+            <object class="text-white-75" data="img/icons/ikonka_tanec.svg" type="image/svg+xml"></object>
+            <i class="fas fa-4x text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Tanec</h3>
+            <p class="text-muted mb-0">Tancujeme ako blázni!</p>
+          </div>
+        </div>
+        <!-- Ikonka Hudba -->
+        <div class="col-lg-4 col-md-4 text-center">
+          <div class="mt-5">
+            <object class="text-white-75" data="img/icons/ikonka_hudba.svg" type="image/svg+xml"></object>
+            <i class="fas fa-4x text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Hudba</h3>
+            <p class="text-muted mb-0">Ľudová hudba je TOP!</p>
+          </div>
+        </div>
+        <!-- Ikonka Spev -->
+        <div class="col-lg-4 col-md-4 text-center">
+          <div class="mt-5">
+            <object class="text-white-75" data="img/icons/ikonka_spev.svg" type="image/svg+xml"></object>
+            <i class="fas fa-4x text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Spev</h3>
+            <p class="text-muted mb-0">Najkrajšie Slovenské ľudové pesničky</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section p-0" id="o-nas">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 p-0">
+          <img class="img-fluid" style="width: 300%" src="img/cover-logo.jpg">
+          <div class="carousel-frame bg-primary-opaq row p-4">
+            <h1 class="col-lg-12 display-1 text-left text-dark font-forever-bold">O nás</h1>
+            <p class="col-lg-12 text-left text-dark">Folklórny súbor Bezanka sa svojmu poslaniu šíriť slovenské ľudové umenie v hudbe, tanci a speve venuje od roku 1974.</p>
+            <p class="col-lg-12 text-left text-dark">Bezanka získala rad ocenení, z ktorých najvzácnejšie sú nesporne ocenenia dosiahnuté na celoštátnych súťažných prehliadkach. Tak sa zaradila medzi popredné amatérske umelecké telesá na Slovensku.</p>
+            <div class="col-lg-12">
+              <a class="btn btn-secondary btn-xl center-block text-white" href="history.html">Zisti viac o našej histórii</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repertoire Section -->
+  <section class="page-section p-6" id="repertoar">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-12 text-center">
+          <h1 class="text-center display-2 font-forever-bold">Repertoár</h1>
+          <p>Celkový program súboru v súčasnosti zahŕňa viac ako dve hodiny tanečných, speváckych a hudobných čísiel z rôznych regiónov západného, stredného a východného Slovenska.</p>
+          <p>Dĺžku predstavenia, jeho obsah i počet účinkujúcich vieme upraviť podľa Vášho želania.</p>
+          <hr class="divider my-2 mb-4 dark">
+          <!-- Dances carousel -->
+          <div id="tance-carousel" class="carousel slide" data-interval="0" data-ride="carousel" pause="true">
+            <!-- Indicators-->
+            <ol class="carousel-indicators">
+              <li class="carousel-indicator bg-white active" data-target="#tance-carousel" data-slide-to="0"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="1"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="2"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="3"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="4"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="5"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="6"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="7"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="8"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="9"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="10"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="11"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="12"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="13"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="14"></li>
+              <li class="carousel-indicator bg-white" data-target="#tance-carousel" data-slide-to="15"></li>
+            </ol>
+            <div class="carousel-inner">
+              <!-- Olafska Item -->
+              <div class="carousel-item active" style="height: 580px">
+                <a class="d-block w-100" href="https://www.youtube.com/watch?v=LVwQOgZPQwE" target="_blank">
+                  <img class="img-fluid" src="img/tance/olafska.jpg" alt="Olafska">
+                </a>
+                <div class="carousel-caption d-none d-md-block my-2">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100"><a class="text-reset" href="https://www.youtube.com/watch?v=LVwQOgZPQwE" target="_blank">Olafská</a></h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Tanec pastierov z Krivian, zvláštnosťou je hudobný sprievod pri tanci - drumbľa.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Ervín Varga</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Peter Budinský</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Sarisska Item -->
+              <div class="carousel-item" style="height: 580px">
+                <a class="d-block w-100" href="http://www.youtube.com/watch?v=B0u39PsxQh8" target="_blank">
+                  <img class="img-fluid" src="img/tance/sarisska.jpg" alt="Sarisska polka">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100"><a class="text-reset" href="http://www.youtube.com/watch?v=B0u39PsxQh8" target="_blank">Šarišská Polka</a></h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Temperamentný párový tanec z Raslavíc.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Ervín Varga.</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Peter Budinský</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Zeby Prisli Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/horehron_zeby_prisli.jpg" alt="Olafska">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Žeby prišli</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Ženské kolesá, čarovanie a párové tance s "dupákmi" z Telgártu.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. Tatiana Križková</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Ing. Roman Hulák</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Jelka Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/jelka.jpg" alt="Tance z Jelky">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Tance z Jelky</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Tradičné Jelčianske tance z Csemadoku</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Ervín Varga</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Mgr. Alžbeta Lukáčová,PhD</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Komjatna Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/komjatna.jpg" alt="Komjatna">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Komjatná</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Temperamentný párový tanec z liptovskej dediny Komjatná.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Jozef Kozub</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Ján Kružliak, st.</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Saffovsky Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/saffa.jpg" alt="Saffovsky">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Po Šaffovsky</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Sólový tanec podľa legendárneho tanečníka J.Šaffu z Dlhého Klčova.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. Peter Kocák</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Hrusov Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/hrusov.jpg" alt="Hrusov">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Hrušov</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Tance z hontianskej dediny Hrušov.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Bc. Martina Drugdová</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: M. Paľko</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tekov Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/tekov.jpg" alt="Tekov">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Na Tekove pri muzike</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Ženské tekovské kolesá.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Martin Urban</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Ing. Marián Járek</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Palotas Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/palotas.jpg" alt="Palotas">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Palotáš</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Palotáš - párové tance "frišká" a čardáš z Hronských Kľačian.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Martin Urban</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Ing. Marián Járek</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Karicka Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/karicka.jpg" alt="Karicka">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Karička</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Ženský kolesový tanec zo Zemplína.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Ervín Varga</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Peter Budinský</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Verbung Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/verbung.jpg" alt="Verbung">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Verbung</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Verbung je mužský tanec, ktorý sa pôvodne tancoval pri odchode na vojenskú službu.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Ervín Varga</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Peter Budinský</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Flaskovy Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/flaskovy.jpg" alt="Flaskovy">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Fľaškový</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Tanec zo Zamutova, v ktorom sa ženy predvádzajú v tancovaní ponad fľašu.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Ervín Varga</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Peter Budinský</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Pozdisovske Cardase Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/pozdisovce.jpg" alt="Pozdisovske Cardase">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Pozdišovské Čardáše</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Párový tanec z Pozdišoviec.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Ervín Varga</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Peter Budinský</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Verbung a Cardas z Kamienky Cardase Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/kamienka.jpg" alt="Kamienka">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Verbung a Čardáš z Kamienky</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Originálne chlapčenské a párové tance a spevy z rusínskej obce Kamienka na Spiši.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Pavol Pitoňák</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Samuel Smetana</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Kyjov Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/kyjov.jpg" alt="Kyjov">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Kyjov</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Dribna a čerjana z Kyjova.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Vladimír Michalko</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Mgr. Michal Noga</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Semetkovce Item -->
+              <div class="carousel-item" style="height: 580px">
+                <img class="img-fluid" src="img/tance/semetkovce.jpg" alt="Semetkovce">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row bg-black-light-opaq py-3">
+                    <div class="col-4 border-right align-self-center">
+                      <h4 class="text-white-100">Šemetkovce</h4>
+                    </div>
+                    <div class="col-8 align-self-center">
+                      <p class="card-text text-white-100 text-left mb-1">Čerjana a Šemetkovské polky.</p>
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Choreografia: Mgr. art. Vladimír Michalko</p> -->
+                      <!-- <p class="card-text text-white-100 text-left mb-1">Hudobná úprava: Mgr. Michal Noga</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Left and Right Arrow-->
+            <a class="carousel-control-prev" href="#tance-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#tance-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Support (2%) Section -->
+  <section class="page-section bg-secondary p-6" id="percenta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-8 text-center">
@@ -156,121 +525,11 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="page-section p-0" id="o-nas">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 p-0">
-          <img class="img-fluid" style="width: 300%" src="img/miska-logo.jpg">
-          <div class="carousel-frame bg-primary-opaq row p-4">
-            <h1 class="col-lg-12 display-1 text-left text-dark font-forever-bold">O nás</h1>
-            <p class="col-lg-12 text-left text-dark">Folklórny súbor Bezanka sa svojmu poslaniu šíriť slovenské ľudové umenie v hudbe, tanci a speve venuje od roku 1974.</p>
-            <p class="col-lg-12 text-left text-dark">Bezanka získala rad ocenení, z ktorých najvzácnejšie sú nesporne ocenenia dosiahnuté na celoštátnych súťažných prehliadkach. Tak sa zaradila medzi popredné amatérske umelecké telesá na Slovensku...</p>
-            <div class="col-lg-12">
-              <a href="history.html"><button" class="btn btn-secondary btn-lg center-block text-white">Zisti viac</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- What is Bezanka Section -->
-  <section class="page-section" id="co-robime">
-    <div class="container">
-      <h1 class="text-center display-1 mt-0 font-forever-bold">Niečo o Bezanke</h1>
-      <hr class="divider my-4">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 text-center">
-          <div class="mt-5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.35 180.35" height="160px">
-              <defs>
-                <style>.a{fill:#fff200;}.b{fill:#46536a;}</style>
-              </defs>
-              <title>Asset 1</title>
-              <circle class="a" cx="90.18" cy="90.18" r="75.18"/>
-              <path class="b" d="M78.05,58.51a170.27,170.27,0,0,0,9.06,19c2.1,4,4.4,7.92,5.21,12.4.74,4.09.56,8.35.9,12.49.54,6.45,1.24,13.94,4.37,19.7,2,3.69,6.94,9.75,11.79,8.26s5.67-8.79,5.81-12.95c.25-7.35-2.21-15.11-4.63-21.94-2.67-7.54-7.46-13.64-8.73-21.66-.66-4.16-1.34-8.25-2.16-12.39-.65-3.31-.73-6.38-2.94-9C95.72,51.19,94,53,95,54.2c2.23,2.69,2.3,7.87,3,11.2s1,6.67,1.61,10c1.05,6.26,4,10.25,6.7,15.87a66.42,66.42,0,0,1,5.43,18.1c.5,3.19,1.17,6.23.88,9.48a21.28,21.28,0,0,1-1,5.26q-.66,4.25-4.2,2.93a4.22,4.22,0,0,1-4.16-1.51c-9.67-8.59-6.32-25-8.5-36.25-1-5.36-4-9.7-6.36-14.53-2.68-5.51-5.77-11.19-7.92-16.91-.56-1.49-3-.85-2.41.66Z"/>
-              <path class="b" d="M79.56,63c-.61,3.16-.93,6.44-2,9.5C77,74.31,75.91,76.8,74,77.69c-1.19.56-2.79.12-4,.38-2.85.59-4.62,3-5.11,5.92-.69,4.14,2.9,6.8,4.48,10.3,1.69,3.74-.5,6.65-1.71,10.08a41.84,41.84,0,0,0-2,8.42c-.31,2.43-.13,6.12,3,6.57,4,.57,7.69-4.93,9.71-7.55a90.29,90.29,0,0,0,7.91-12.38c2.77-5.15,6.1-11.84,6-17.75a1.25,1.25,0,0,0-2.5,0c.12,5.68-3.34,12.33-6,17.19A108.94,108.94,0,0,1,77,109.5a33,33,0,0,1-4.22,5.07l-2.35,1.73-2.22-3.63a9.22,9.22,0,0,1,.61-3c.93-3.85,3.56-7.46,4-11.34.34-3-1.25-5.39-2.74-7.87-1.3-2.15-3.25-4.24-2.37-7.11.76-2.45,3-2.48,5.1-2.93,7.62-1.63,7.93-10.21,9.18-16.74.3-1.57-2.11-2.25-2.41-.66Z"/>
-              <path class="b" d="M74.32,81c2,3.94,3.74,7.78,4.3,12.19.46,3.65,1.74,8.41.94,12-.35,1.57,2.06,2.24,2.41.66.88-4-.26-8.62-.77-12.58-.63-4.91-2.49-9.16-4.72-13.55-.73-1.43-2.89-.17-2.16,1.26Z"/>
-              <path class="b" d="M94.49,99.78c1.57,4.83,5.16,19.44,13,15.86,6.15-2.8,5.77-14,3-18.83a1.25,1.25,0,0,0-2.16,1.26,13.93,13.93,0,0,1,1.34,8.51,13.66,13.66,0,0,1-.71,3.2c-.76,2.1-.72,2.48-3,3-2.68.61-3.58-.68-5-2.91A23.21,23.21,0,0,1,99.19,106c-.9-2.27-1.54-4.61-2.29-6.93-.49-1.52-2.91-.87-2.41.66Z"/>
-              <path class="b" d="M95.53,98.51a16.14,16.14,0,0,1,8.52,2,59.54,59.54,0,0,1,6.28,3.52c1.31.94,2.56-1.23,1.26-2.16a46.67,46.67,0,0,0-8-4.44,18.36,18.36,0,0,0-8-1.44c-1.6.06-1.61,2.56,0,2.5Z"/>
-              <path class="b" d="M97.67,107.57a41.75,41.75,0,0,0,7.79-5.57,34.28,34.28,0,0,0,2.74-3c.47-.59,1.12-2.23,1.72-2.67,1.29-.94,0-3.11-1.26-2.16a6.57,6.57,0,0,0-1.6,2.07,22.64,22.64,0,0,1-2.6,3.19,37.45,37.45,0,0,1-8,6c-1.37.84-.12,3,1.26,2.16Z"/>
-              <path class="b" d="M78.25,86.73a20.3,20.3,0,0,1,5.63,2.06,20.42,20.42,0,0,1,4.56,4.16c1.11,1.17,2.88-.6,1.77-1.77-1.6-1.69-3-3.41-5.06-4.55a30,30,0,0,0-3-1.51,20.86,20.86,0,0,0-3.25-.8c-1.56-.38-2.23,2-.66,2.41Z"/>
-              <path class="b" d="M80.6,97.34c2.28,0,4.47-1,6.54-1.89,1.46-.61.82-3-.66-2.41a23.44,23.44,0,0,1-2.69,1,11.44,11.44,0,0,1-3.18.82,1.25,1.25,0,0,0,0,2.5Z"/>
-            </svg>
-            <i class="fas fa-4x text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Tanec</h3>
-            <p class="text-muted mb-0">Tancujeme ako blázni!</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 text-center">
-          <div class="mt-5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.35 180.35" height="160px">
-              <defs>
-                <style>.a{fill:#fff200;}.b{fill:#46536a;}</style>
-              </defs>
-              <title>Asset 2</title>
-              <circle class="a" cx="90.18" cy="90.18" r="75.18"/>
-              <path class="b" d="M87.42,90.3c5.8-7.64,12.28-15.38,17.15-23.64a7.79,7.79,0,0,0,1.32-5.58c-.09-2.39,4-7,6.88-5.69s1.76,3.84.86,5.9c-.54,1.23-.78,3.26-1.95,4-.59.36-2.39.21-3.16.53a6.61,6.61,0,0,0-2.79,2.27c-6,7.67-9.49,17.27-14.86,25.36C90,94.77,92.14,96,93,94.69c3.52-5.3,6.23-11.07,9.49-16.53,1.41-2.36,2.79-5.53,4.57-7.6s2.47-1.89,5-2.63c.34-.1.71.17,1.06-.06a3.74,3.74,0,0,0,1.32-1.63,40.06,40.06,0,0,0,3-7.14c1-3.08-.93-4.58-3.46-5.86s-4.18-1.56-6.32.41c-2.31,2.13-4.84,4.43-4.8,7.59,0,.47.76.72.76,1.15,0,1.39-1.36,3.22-2,4.35a78.1,78.1,0,0,1-5.25,7.2C92.63,78.93,89,84.06,85.26,89c-1,1.28,1.2,2.53,2.16,1.26Z"/>
-              <path class="b" d="M90.34,80.5c-2.54-3.33-5.54-4.89-9.85-3.47-4.73,1.56-6.34,5.26-7.08,9.77-.42,2.56-1,5.13-3.19,6.88a20.78,20.78,0,0,1-4,2,21.44,21.44,0,0,0-6.91,5,14.61,14.61,0,0,0-3.42,12.68c2.27,11.25,14.79,18.21,25.48,17C91.54,129.18,98,119.09,97,109.28c-.19-1.86-1-3.63-.21-5.42s2.73-2.36,4.25-3.51A6.65,6.65,0,0,0,104,95.75c.67-5.34-3.43-8-7.5-9.84-1.45-.67-2.72,1.48-1.26,2.16,1.91.89,4.92,1.59,5.5,3.95l-1.34,6.5L98,99.37c-.47.42-1.15.66-1.65,1.07-2.42,2-2.51,4-2.1,7,.86,6.24-.25,12.58-5.21,17s-13.51,4.83-19.32,1.81c-5.08-2.64-10.64-8.2-11.39-14-.94-7.29,3.86-11.7,9.85-14.55C71.47,96,75,94.26,75.78,90.33c.42-2.14,0-4.25.74-6.35,1.83-4.92,8.37-6.55,11.67-2.22,1,1.26,3.13,0,2.16-1.26Z"/>
-              <path class="b" d="M84.72,92.36a7.94,7.94,0,0,0-9.16,6.4,7,7,0,0,0,6.75,7.92c3.86-.08,8.06-1.94,10.09-5.34s2-8-2.56-9c-1.57-.33-2.24,2.08-.66,2.41,3.29.7,1.9,4.54.33,6.29a9.7,9.7,0,0,1-4.84,2.77c-2.22.58-5.23.59-6.12-2.11-1.19-3.57,1.58-7.61,5.51-7,1.57.26,2.25-2.15.66-2.41Z"/>
-              <path class="b" d="M70.35,114.19c2.25-3.26,4.21-6.63,6.25-10s4.49-6.35,6.43-9.73a1.25,1.25,0,0,0-2.16-1.26c-1.94,3.38-4.42,6.4-6.43,9.73s-4,6.75-6.25,10c-.91,1.33,1.25,2.58,2.16,1.26Z"/>
-              <path class="b" d="M73.28,118.09c3.48-7.44,7.88-16.35,13.7-22.18a1.25,1.25,0,0,0-1.77-1.77c-6,6-10.49,15-14.09,22.68-.68,1.45,1.48,2.72,2.16,1.26Z"/>
-              <path class="b" d="M75.47,120C80.7,112.16,85,103.89,90.88,96.4c1-1.25-.78-3-1.77-1.77-6,7.66-10.45,16.08-15.8,24.15-.89,1.34,1.27,2.6,2.16,1.26Z"/>
-            </svg>
-            <i class="fas fa-4x text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Hudba</h3>
-            <p class="text-muted mb-0">Ľudová hudba je TOP!</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 text-center">
-          <div class="mt-5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.35 180.35" height="160px">
-              <defs>
-                <style>.a{fill:#fff200;}.b{fill:#46536a;}</style>
-              </defs>
-              <title>Asset 3</title>
-              <circle class="a" cx="90.18" cy="90.18" r="75.18"/>
-              <path class="b" d="M79.69,61.31c-3.65-2-6-2.44-9.77-.42a16.61,16.61,0,0,0-7.44,7.3C58.84,75.65,62,83.53,70.68,84.7c7,.94,17.55-4.43,18.33-12.18.87-8.65-7.81-13-15.09-10.9A1.25,1.25,0,0,0,74.59,64c3.15-.92,6.28-1.18,9,1.23s3.93,6.54,1.89,9.91c-2.81,4.62-9.09,7.74-14.37,7-15.28-2.17-4.19-25,7.37-18.69,1.41.77,2.68-1.39,1.26-2.16Z"/>
-              <path class="b" d="M64.33,77.11C73,80.39,78.42,71.08,83,65.45c1-1.24-.75-3-1.77-1.77-3.9,4.79-8.64,13.89-16.23,11-1.51-.57-2.16,1.85-.66,2.41Z"/>
-              <path class="b" d="M73.61,87c4.31,8.67,8.61,17.49,13.52,25.84,1.65,2.8,5.91,12.69,10.72,10.07,6.11-3.33,1.47-14.93-.18-19.26C94.58,95.52,90,87.7,87.24,79.5c-.51-1.52-2.93-.87-2.41.66,1.72,5.09,4.64,10,6.74,15,1.4,3.31,2.75,6.63,4,10,1.16,3.08,4,9,2.36,12.12q.27,4.05-4.6.79l-.69-1.19A39.21,39.21,0,0,1,90.14,113c-1.61-2.6-3-5.33-4.44-8C82.36,98.57,79,92.2,75.77,85.75c-.72-1.44-2.87-.18-2.16,1.26Z"/>
-              <path class="b" d="M65.76,70.87a28.63,28.63,0,0,1,2.6,5.87c.44,1.6,1.23,3.63,1.16,5.28s2.43,1.6,2.5,0c.09-1.94-.73-4.09-1.25-5.94a31.68,31.68,0,0,0-2.85-6.46c-.76-1.42-2.92-.16-2.16,1.26Z"/>
-              <path class="b" d="M69.56,66.21c1.83,5,4.65,10.37,4.75,15.81a1.25,1.25,0,0,0,2.5,0c-.11-5.76-2.91-11.14-4.84-16.47-.55-1.5-3-.85-2.41.66Z"/>
-              <path class="b" d="M75.36,63.89c2.46,5.39,5.1,11.17,5.06,17.25a1.25,1.25,0,0,0,2.5,0c0-6.58-2.74-12.69-5.4-18.51-.67-1.46-2.82-.19-2.16,1.26Z"/>
-              <path class="b" d="M100.09,122.48c2.07,5.27,5.22,6.16,9.51,2,6.32-6.09,10.88-20.29,21.9-16,1.5.59,2.15-1.83.66-2.41-5.3-2.07-10.37-.44-14.19,3.62a61.84,61.84,0,0,0-5,6.69c-1.52,2.13-7.94,11.78-10.45,5.39-.58-1.48-3-.84-2.41.66Z"/>
-            </svg>
-            <i class="fas fa-4x text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Spev</h3>
-            <p class="text-muted mb-0">Najkrajšie Slovenské ľudové pesničky</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Repertoire Section -->
-  <section class="page-section p-0" id="repertoar">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 p-0">
-          <img class="img-fluid" style="width: 300%" src="img/tanec.jpg">
-          <div class="carousel-frame-right bg-primary-opaq row p-4">
-            <h1 class="col-lg-12 display-1 text-left text-dark font-forever-bold">Repertoár</h1>
-            <p class="col-lg-12 text-left text-dark"'>Celkový program súboru v súčasnosti zahŕňa viac ako dve hodiny tanečných, speváckych a hudobných čísiel z rôznych regiónov západného, stredného a východného Slovenska.</p>
-            <p class="col-lg-12 text-left text-dark"'>Dĺžku predstavenia, jeho obsah i počet účinkujúcich vieme upraviť podľa Vášho želania...</p>
-            <div class="col-lg-12">
-              <a href="/repertoire.html"><button type="button" class="btn btn-secondary btn-lg center-block text-white">Zisti viac</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Instagram photo section-->
-  <section class="page-section" py-2 id="instagram">
+  <section class="page-section p-6" id="instagram">
     <div class="container">
       <h2 class="text-center display-1 mt-0 font-forever-bold">Galéria</h2>
+      <hr class="divider my-2 mb-4 dark">
       <div class="row py-2 pl-3 pr-3">
         <div class="col-lg-4 col-md-6 col-sm-6 col-6 pb-3">
           <img class="d-block object-fit w-100" src="img/instagram-photo-1.jpg">
@@ -291,66 +550,14 @@
           <img class="d-block object-fit w-100" src="img/instagram-photo-6.jpg">
         </div>
       </div>
-        <div class="col-lg-4 col-lg-12 text-center my-3">
-          <a class="btn btn-secondary text-white btn-xl" href="https://www.instagram.com/fs_bezanka/" target="_blank" >Viac Fotiek!</a>
-        </div>
-    </div>
-  </section>
-
-
-  <!-- Form -->
-  <section class="page-section bg-primary" id="napiste-nam">
-    <div class="container">
-      <h2 class="text-center display-1 mt-0 font-forever-bold">Napíšte nám</h2>
-      <div class="row">
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="md-form mb-0">
-                    <input type="text" id="name" name="name" class="form-control">
-                    <label for="name" class="">Vaše meno</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="md-form mb-0">
-                    <input type="text" id="email" name="email" class="form-control">
-                    <label for="email" class="">Vaša emailová adresa</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="md-form">
-                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                    <label for="message">Sem napíšte Vašu správu</label>
-                  </div>
-                </div>
-              </div>
-            </form>
-        </div>
-        <div class="col-md-3 text-center">
-          <ul class="list-unstyled mb-0">
-            <li><i class="fas fa-phone mt-4 fa-2x"></i>
-              <p>+421 903 429 527</p>
-            </li>
-            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-              <p>fsbezanka@zoznam.sk</p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-12 col-md-12 text-center">
-          <a class="btn btn-secondary text-white btn-xl" onclick="document.getElementById('contact-form').submit();">Odoslať</a>
-        </div>
-        <div class="status"></div>
+      <div class="col-lg-4 col-lg-12 text-center my-4">
+        <a class="btn btn-secondary text-white btn-xl" href="https://www.instagram.com/fs_bezanka/" target="_blank" >Viac fotiek nájdeš na našom Instagrame!</a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="page-section p-0" id="where-are-we">
+  <section class="page-section p-0" id="map">
     <div class="container-fluid bg-dark p-6">
       <h1 class="text-center text-white display-1 mt-0 font-forever-bold">Kde nás nájdete?</h1>
       <hr class="divider light my-2">
@@ -370,6 +577,7 @@
     <div class="container-fluid bg-dark py-0" id="kontakt">
       <div class="container bg-dark py-5">
       <div class="row">
+        <!-- Trainings -->
         <div class=col-lg-4>
           <div class="card mb-12 bg-dark no-border">
             <div class="card-body">
@@ -382,6 +590,7 @@
             </div>
           </div>
         </div>
+        <!-- Contact -->
         <div class=col-lg-4>
           <div class="card mb-12 bg-dark no-border">
             <div class="card-body">
@@ -391,20 +600,17 @@
               <p class="card-text text-white-75 mb-1">Červeňákova 1816/6, 841 01 Bratislava</p>
               <p class="card-text text-white-75 mb-1">IČO: 30779600</p>
             </div>
-          </div>
-          <div class="row">
+            <!-- Email, Phone -->
             <div class="card-body">
-              <div class="row">
-                <div class="col-lg-6 bg-dark no-border text-center pl-1 pr-1">
-                  <a>
-                    <i class="fas fa-phone fa-2x mb-0 text-white-75 align-middle"></i>
-                  </a>
-                  <p class="text-white-75">+421 903 429 527</p>
-                </div>
-                <div class="col-lg-6 bg-dark no-border text-center pl-1 pr-1">
-                  <i class="fas fa-envelope fa-2x mb-0 mr-1 text-white-75 align-middle"></i>
-                  <a class="text-white-75" href="mailto:contact@yourwebsite.com">fsbezanka@zoznam.sk</a>
-                </div>
+              <!-- Phone -->
+              <div class="col-lg-12 bg-dark no-border text-left pl-1 pr-1">
+                <i class="fas fa-phone fa-2x mb-5 mr-2 text-white-75"></i>
+                <span class="text-white-75">+421 903 429 527</span>
+              </div>
+              <!-- Email -->
+              <div class="col-lg-12 bg-dark no-border text-left pl-1 pr-1">
+                <i class="fas fa-envelope fa-2x mb-0 mr-2 text-white-75 align-middle"></i>
+                <a class="text-white-75" href="mailto:contact@yourwebsite.com">fsbezanka@zoznam.sk</a>
               </div>
             </div>
           </div>
@@ -412,34 +618,36 @@
         <!-- MG Studio -->
         <div class=col-lg-4>
           <div class="card mb-12 bg-dark no-border">
-            <div class="row">
-              <div class="card-body">
-                <h2 class="card-title text-white mt-0 mb-4">Tvorca Webstránky</h2>
-                <div class="row align-items-center">
-                  <div class=" col-xl-8 col-lg-8 col-md-4 col-sm-4 col-6 bg-dark no-border">
-                    <object class="text-white-75" data="img/mg-studio-logo.svg" type="image/svg+xml"
-                            height="100%" width="100%">
-                    </object>
-                  </div>
+            <div class="card-body">
+              <h2 class="card-title text-white mt-0 mb-4">Tvorca Webstránky</h2>
+              <div class="row align-items-center">
+                <div class=" col-xl-8 col-lg-8 col-md-4 col-sm-4 col-6 bg-dark no-border">
+                  <object class="text-white-75" data="img/mg-studio-logo.svg" type="image/svg+xml"
+                          height="100%" width="100%">
+                  </object>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Social Network Contacts-->
           <div class="card bg-dark no-border">
-            <div class="row">
-              <div class="card-body pb-0">
-                <h2 class="card-title text-white mt-0">Sociálne siete</h2>
-                <div class="row">
-                  <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-3 bg-dark no-border">
-                    <a target="_blank" href="https://facebook.com/FolklornySuborBezanka">
-                      <i class="fab fa-facebook fa-3x mb-3 text-white-75"></i>
-                    </a>
-                  </div>
-                  <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-3 bg-dark no-border">
-                    <a target="_blank" href="https://www.instagram.com/fs_bezanka/">
-                      <i class="fab fa-instagram fa-3x mb-3 text-white-75"></i>
-                    </a>
-                  </div>
+            <div class="card-body pb-0">
+              <h2 class="card-title text-white mt-0">Sociálne siete</h2>
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-3 bg-dark no-border">
+                  <a target="_blank" href="https://facebook.com/FolklornySuborBezanka">
+                    <i class="fab fa-facebook fa-2x mb-3 text-white-75"></i>
+                  </a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-3 bg-dark no-border">
+                  <a target="_blank" href="https://www.instagram.com/fs_bezanka/">
+                    <i class="fab fa-instagram fa-2x mb-3 text-white-75"></i>
+                  </a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-3 bg-dark no-border">
+                  <a target="_blank" href="https://www.youtube.com/channel/UCY8L27gC0xQgAjCQIVQb5-A">
+                    <i class="fab fa-youtube fa-2x mb-3 text-white-75"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -447,6 +655,38 @@
         </div>
       </div>
     </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="page-section p-6" id="napiste-nam">
+    <div class="container">
+      <h2 class="text-center display-1 mt-0 font-forever-bold">Napíšte nám</h2>
+      <hr class="divider dark my-2 mb-4">
+      <div class="row">
+        <div class="col-12">
+          <form id="contact-form" name="contact-form" action="https://formspree.io/fsbezanka@zoznam.sk" method="POST">
+            <div class="form-group">
+              <label for="name">Meno</label>
+              <input type="text" id="name" name="name" class="form-control" aria-describedby="nameHelp" placeholder="Meno a priezvisko">
+              <small id="nameHelp" class="form-text text-muted">Sem zadajte Vaše meno a priezvisko</small>
+            </div>
+            <div class="form-group">
+              <label for="email" class="">Email</label>
+              <input type="text" id="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Emailová adresa">
+              <small id="emailHelp" class="form-text text-muted">Sem zadajte Vašu emailovú adresu</small>
+            </div>
+            <div class="form-group">
+              <label for="message">Správa</label>
+              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" aria-describedby="messageHelp" placeholder="Správa"></textarea>
+              <small id="emailHelp" class="form-text text-muted">Sem napíšte Vašu správu</small>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" valute="Send" class="btn btn-secondary text-white btn-xl">Odoslať</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
