@@ -5,6 +5,8 @@ if [ -z "${ACCESS_TOKEN}" ] || [ -z "${DESTINATION_DIR}" ]; then
   exit 1
 fi
 
+LOG_DIR="/var/www/html/bezanka/"
+
 # Download list of latest Instagram photos
 curl --silent "https://api.instagram.com/v1/users/self/media/recent?access_token=${ACCESS_TOKEN}&count=6" \
      | tr ',' '\n' \
@@ -15,10 +17,10 @@ curl --silent "https://api.instagram.com/v1/users/self/media/recent?access_token
 # Check if there are new photos
 #   If yes, download them and move list to backup file
 id=1
-if ! diff '/tmp/instagram_last_pics.txt' '/tmp/instagram_last_pics.bck.txt' || [ ! -f "${DESTINATION_DIR}/instagram-photo-6.jpg" ]; then
+if ! diff "/${LOG_DIR}/instagram_last_pics.txt" "/${LOG_DIR}/instagram_last_pics.bck.txt" || [ ! -f "${DESTINATION_DIR}/instagram-photo-6.jpg" ]; then
   while read -r link; do
     wget "${link}" -O "${DESTINATION_DIR}/instagram-photo-${id}.jpg"
     ((++id))
-  done < '/tmp/instagram_last_pics.txt'
-  mv '/tmp/instagram_last_pics.txt' '/tmp/instagram_last_pics.bck.txt'
+  done < "/${LOG_DIR}/instagram_last_pics.txt"
+  mv "/${LOG_DIR}/instagram_last_pics.txt" "/${LOG_DIR}/instagram_last_pics.bck.txt"
 fi
