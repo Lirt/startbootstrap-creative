@@ -499,12 +499,10 @@ hr.dark {
   // width: 350px; 
 }
 
-// Youtube icon in the middle
 .opaq:hover .middle {
-  opacity: 0.8;
+  opacity: 1;
 }
 
-// Youtube icon in the middle
 .opaq:hover .a .img .image {
   opacity: 1;
 }
@@ -512,11 +510,12 @@ hr.dark {
 // Youtube icon in the middle
 .middle {
   transition: .5s ease;
-  opacity: 0;
+  opacity: 0.6;
   position: absolute;
   top: 50%;
   left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
 }
