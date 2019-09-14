@@ -12161,20 +12161,6 @@ html {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-.bg-history {
-  background-image: url("img/cover-logo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.bg-repertoire {
-  background-image: url("img/repertoire-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 .no-padding {
   padding-left: 0px;
   padding-right: 0px;
@@ -12304,6 +12290,12 @@ html {
   .caption-head-resp {
     font-size: 10px;
   }
+  .bg-history {
+    background-image: url("img/cover-logo-sm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
 @media (min-width: 576px) {
@@ -12354,6 +12346,12 @@ html {
   .caption-head-resp {
     font-size: 16px;
   }
+  .bg-history {
+    background-image: url("img/cover-logo-sm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
 @media (min-width: 768px) {
@@ -12399,6 +12397,12 @@ html {
   }
   .caption-head-resp {
     font-size: 20px;
+  }
+  .bg-history {
+    background-image: url("img/cover-logo-md.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -12458,6 +12462,12 @@ html {
   }
   .caption-head-resp {
     font-size: 24px;
+  }
+  .bg-history {
+    background-image: url("img/cover-logo-xl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -12519,6 +12529,12 @@ html {
   .caption-head-resp {
     font-size: 24px;
   }
+  .bg-history {
+    background-image: url("img/cover-logo-xl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -12579,6 +12595,12 @@ html {
   }
   .caption-head-resp {
     font-size: 28px;
+  }
+  .bg-history {
+    background-image: url("img/cover-logo-xl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
