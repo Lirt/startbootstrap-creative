@@ -12291,13 +12291,15 @@ html {
     font-size: 10px;
   }
   .bg-history {
-    background-image: url("img/cover-logo-sm.jpg");
+    height: 100vh;
+    background-image: url("img/cover-logo-xs.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
   }
 }
 
@@ -12350,13 +12352,15 @@ html {
     font-size: 16px;
   }
   .bg-history {
+    height: 100vh;
     background-image: url("img/cover-logo-sm.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
   }
 }
 
@@ -12405,13 +12409,14 @@ html {
     font-size: 20px;
   }
   .bg-history {
-    background-image: url("img/cover-logo-md.jpg");
+    background-image: url("img/cover-logo-sm.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
   }
 }
 
@@ -12475,11 +12480,12 @@ html {
   .bg-history {
     background-image: url("img/cover-logo-xl.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
   }
 }
 
@@ -12545,10 +12551,6 @@ html {
     background-image: url("img/cover-logo-xl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
   }
 }
 
@@ -12614,11 +12616,11 @@ html {
   .bg-history {
     background-image: url("img/cover-logo-xl.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
