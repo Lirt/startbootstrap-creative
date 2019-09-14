@@ -12297,6 +12297,13 @@ html {
   .carousel-caption {
     bottom: 10px;
   }
+  .responsive-repertoire {
+    height: 210px;
+    font-size: 7px;
+  }
+  .caption-head-resp {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -12340,6 +12347,13 @@ html {
     border-radius: 100%;
     opacity: 1;
   }
+  .responsive-repertoire {
+    height: 350px;
+    font-size: 11px;
+  }
+  .caption-head-resp {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -12379,6 +12393,13 @@ html {
     border-radius: 100%;
     opacity: 1;
   }
+  .responsive-repertoire {
+    height: 450px;
+    font-size: 15px;
+  }
+  .caption-head-resp {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -12394,7 +12415,7 @@ html {
   }
   .carousel-frame-right-lg {
     font-size: 1.00rem;
-    bottom: 25%;
+    bottom: 23%;
   }
   .carousel-frame .font-forever-bold {
     font-size: 4.0rem;
@@ -12430,6 +12451,13 @@ html {
     background-color: #fff200;
     border-radius: 100%;
     opacity: 1;
+  }
+  .responsive-repertoire {
+    height: 580px;
+    font-size: 17px;
+  }
+  .caption-head-resp {
+    font-size: 24px;
   }
 }
 
@@ -12483,6 +12511,74 @@ html {
     background-color: #fff200;
     border-radius: 100%;
     opacity: 1;
+  }
+  .responsive-repertoire {
+    height: 580px;
+    font-size: 17px;
+  }
+  .caption-head-resp {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .carousel-frame {
+    font-size: 1.1rem;
+    bottom: 45%;
+    right: 50%;
+    left: 15%;
+  }
+  .carousel-frame-lg {
+    font-size: 1.1rem;
+  }
+  .carousel-frame-right {
+    font-size: 1.1rem;
+    bottom: 45%;
+  }
+  .carousel-frame-right-lg {
+    font-size: 1.1rem;
+  }
+  .carousel-frame .font-forever-bold {
+    font-size: 5.0rem;
+  }
+  .carousel-frame-lg .font-forever-bold {
+    font-size: 5.0rem;
+  }
+  .carousel-frame-right .font-forever-bold {
+    font-size: 5.0rem;
+  }
+  .carousel-frame-right-lg .font-forever-bold {
+    font-size: 5.0rem;
+  }
+  .btn {
+    padding: 1.15rem 1.4rem;
+    font-size: 1.00rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5.0rem;
+  }
+  .btn-my-lg {
+    padding: 1.05rem 1.3rem;
+    font-size: 0.960rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3.0rem;
+  }
+  .carousel-indicators-li li {
+    height: 30px;
+    width: 30px;
+    background-color: #fff200;
+    border-radius: 100%;
+    opacity: 1;
+  }
+  .responsive-repertoire {
+    height: 580px;
+    font-size: 18px;
+  }
+  .caption-head-resp {
+    font-size: 28px;
   }
 }
 
@@ -12548,7 +12644,7 @@ hr.dark {
 .middle {
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  opacity: 0.6;
+  opacity: 0.7;
   position: absolute;
   top: 50%;
   left: 50%;
