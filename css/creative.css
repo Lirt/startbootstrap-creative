@@ -12100,7 +12100,6 @@ html {
 
 .font-playfair {
   font-family: 'Playfair Display', serif;
-  font-style: regular;
 }
 
 .font-forever {
@@ -12230,8 +12229,8 @@ html {
 }
 
 .carousel-indicators-left {
-  -webkit-box-pack: left;
   -ms-flex-pack: left;
+  -webkit-box-pack: left;
   justify-content: left;
 }
 
@@ -12241,19 +12240,19 @@ html {
 
 @media (max-width: 575.98px) {
   .carousel-frame {
-    font-size: 0.3rem;
-    bottom: 25%;
-    right: 50%;
+    font-size: 0.50rem;
+    bottom: 22%;
+    right: 46%;
     left: 15%;
   }
   .carousel-frame-right {
-    font-size: 0.3rem;
-    left: 45%;
+    font-size: 0.50rem;
+    left: 40%;
     right: 12%;
-    bottom: 15%;
+    bottom: 10%;
   }
   .carousel-frame .font-forever-bold {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .carousel-frame-right .font-forever-bold {
     font-size: 2.0rem;
@@ -12285,17 +12284,16 @@ html {
   }
   .responsive-repertoire {
     height: 210px;
-    font-size: 7px;
+    font-size: 9.0px;
   }
   .caption-head-resp {
-    font-size: 10px;
+    font-size: 11px;
   }
   .bg-history {
     height: 100vh;
     background-image: url("img/cover-logo-xs.jpg");
     background-size: cover;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12356,7 +12354,6 @@ html {
     background-image: url("img/cover-logo-sm.jpg");
     background-size: cover;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12412,7 +12409,6 @@ html {
     background-image: url("img/cover-logo-sm.jpg");
     background-size: cover;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12481,7 +12477,6 @@ html {
     background-image: url("img/cover-logo-xl.jpg");
     background-size: cover;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12617,7 +12612,6 @@ html {
     background-image: url("img/cover-logo-xl.jpg");
     background-size: cover;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
