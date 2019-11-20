@@ -9,10 +9,11 @@ LOG_DIR="/var/www/html/bezanka"
 
 # Download list of latest Instagram photos
 curl --silent "https://api.instagram.com/v1/users/self/media/recent?access_token=${ACCESS_TOKEN}&count=6" \
-     | tr ',' '\n' \
-     | grep -A4 'standard_resolution' \
-     | grep "url.*\.jpg" \
-     | grep -o "https://.*\.jpg.*cdninstagram\.com" > "${LOG_DIR}/instagram_last_pics.txt"
+    | jq '.' \
+    | grep -A4 "standard_resolution" \
+    | grep "jpg" \
+    | cut -d '"' -f4 \
+    > "${LOG_DIR}/instagram_last_pics.txt"
 
 # Check if there are new photos
 #   If yes, download them and move list to backup file
